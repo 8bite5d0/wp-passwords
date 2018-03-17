@@ -1,8 +1,12 @@
 <?php
+/*
+Plugin Name: WP-sha512
+Version: 1.0
+*/
 
 if(!function_exists('wp_hash_password')):
    function wp_hash_password($password){
-     return hash('sha256', $password);
+     return hash('sha512', $password);
    }
 endif;
 
